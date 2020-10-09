@@ -1,0 +1,37 @@
+button{
+  margin: 5px;
+}
+.estrelas input[type=radio] {
+    display: none;
+}
+.estrelas label i.fa{
+    font-size: 5em
+  }
+.estrelas label i.fa:before {
+    content:'*';
+    color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}
+
+.blocoForm{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+input{
+    padding: 5px;
+    padding-right: 50px;
+    margin: 5px;
+}
+
+footer {            
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #ffffff;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
