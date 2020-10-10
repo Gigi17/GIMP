@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> GIMP. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+    crossorigin="anonymous"></script>
+    <link href="layout/gimp.css" rel="stylesheet" type="text/css" />
+    <script src="script/tema.js"></script>
+
+    <style>
+        body {
+        padding: 15px;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        }
+        .contrast-mode {
+          background-color: black;
+          color: white;
+        }
+        .extra-mode {
+          background-color: #ffffe6 ;
+          color: crimson;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <nav id="navbar" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">GIMP</a>
+       <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Seções </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"  href="#nani"> O que é </a>
+                <a class="dropdown-item" href="#hist"> História</a>
+                <a class="dropdown-item" href="#utilidade">Para que serve</a>
+                <a class="dropdown-item" href="#ex"> Exemplos </a>
+                <a class="dropdown-item" href="#imagem"> Imagens </a>
+                <a class="dropdown-item" href="#sobre"> Mais sobre o GIMP </a>
+                <a class="dropdown-item" href="#formu"> Formulário </a>
+                <a class="dropdown-item" href="#refe"> Referências </a>
+                <a class="dropdown-item" href="#coment"> Comentários </a>
+                <a class="dropdown-item" href="#avaliação"> Avaliação </a>
+                </div>
+            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Temas </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <button onclick="myFunction()"> Alto Contraste </button>
+                    <button onclick="change()"> Personalizado </button>
+                    </div>
+                </li>
+        </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <h1 id="nani"> O que é </h1>
+        <p> GIMP (acrônimo para GNU Image Manipulation Program) é uma ferramenta multi-plataforma de manipulação de fotos. Ele é um programa de código aberto voltado, 
+            essencialmente, para edição e criação de imagens raster e, em menor escala, para desenho vetorial. O software é repleto de recursos,
+             de fácil uso e uma boa alternativa gratuita ao mais conhecido dos editores, o gigante Adobe Photoshop. </p>
+        
+        <h1 id="hist"> História </h1>
+        <p> O GIMP foi criado em 1995 por Peter Mattis e Spencer Kimball, que o desenvolveram como parte de um trabalho para a faculdade.
+            Atualmente, ele é mantido por um grupo de voluntários e licenciado sob a GNU General Public License. </p>
+        
+        <h1 id="utilidade"> Para que serve </h1>
+        <p> O GIMP é como um "Photoshop livre", com a vantagem de ser mais leve e conter atualizações e plugins
+            feitos pelos próprios usuários que podem tornar o programa muito mais versátil. Ele é uma alternativa 
+            grátis para editar e criar imagens, gráficos, apresentações multimídia e muito mais. 
+            Você pode converter formatos, utilizar vários efeitos e filtros, camadas e modos de brilho e contraste, usar ferramentas de transformação, entre outras.
+            Para isso, o TechTudo apresenta para você as principais ferramentas e recursos do programa para você editar facilmente as suas imagens. </p>
+        
+        <h1 id="ex"> Alguns exemplos de sua utilização </h1>
+        <h3> Camadas </h3>
+        <p> Essa função permite adicionar e subtrair elementos, efeitos e edições em uma imagem
+            sem destruí - la. Pode trabalhar em uma camada específica, adicionando efeitos e cores especiais,
+            sem interferir nas camadas acima ou abaixo de sua camada de trabalho; pode reorganizar as camadas (arrastar e soltar),
+            configurá-las em grupos , mexer com a opacidade ou transparência e muito mais</p>
+        
+        <h3> Remover cores </h3>
+        <p> Isto é feito através da utilização de camadas em escala de cinza e a utilização da ferramenta Máscara de camada.
+            Na barra lateral Camadas, clique com o botão direito do mouse para criar uma camada duplicada.
+            No menu Cores clique na ferramenta Dessaturar, e escolha um dos três métodos para transformar as cores da camada superior.
+            Com o botão direito do mouse sobre a camada de cinza na barra lateral, selecione Adicionar máscara de camada
+            Isso cria uma camada virtual que controla transparência e opacidade. Agora selecione a máscara, a ferramenta
+            de pintura na cor preta e depois pinte sobre o elemento que deseja colorir a fim de revelar a camada de cor abaixo. </p>
+        
+        <h3> Personalizar pincéis </h3>
+        <p> A barra lateral na parte inferior esquerda da tela permite que você crie um novo pincel com base em formas
+            geométricas, por meio de uma interface baseada em controles deslizantes. </p>
+
+        <h1 id="imagem"> Imagens </h1>
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="imagens/GIMP.png" alt=" Primeiro ">
+                    <div class="carousel-capition d-none d-md-block">
+                        <p> Programa GIMP mostrando a ferramenta de curva melhorada. </p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <img class="img-fluid" src="imagens/GIMP 1.png" style="max-width: 950px; max-height: 300px" alt=" Segundo ">
+                    <div class="carousel-capition d-none d-md-block">
+                        <p> Editando uma imagem. </p>
+                    </div>  
+                </div>
+    
+                <div class="carousel-item">
+                    <img class="img-fluid" src="imagens/GIMP 2.png" alt=" Terceiro ">
+                    <div class="carousel-capition d-none d-md-block">
+                        <p> Redimensionando uma camada no GIMP. </p>
+                    </div>  
+                </div>
+    
+                <div class="carousel-item">
+                    <img class="img-fluid" src="imagens/GIMP 3.png" alt=" Quarto ">
+                    <div class="carousel-capition d-none d-md-block">
+                        <p> Criando gráficos de paredes realistas. </p>
+                    </div>  
+                </div>
+    
+            </div>
+    
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+    
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+    
+            </div>
+
+        <h1 id="sobre"> Curiosidades sobre o GIMP </h1>
+        <h3> Nome </h3>
+        <p> A ideia era simples, criar um programa que tivesse o código fonte aberto para editar e manipular imagens, o nome do 
+            programa sempre foi "GIMP", mas em suas primeiras versões ele se chamava "General Image Manipulation Program", algo
+            que foi mudado depois para apoiar o projeto GNU, ele então passou a se chamar "GNU Image Manipulation Program". </p>
+        <h3> Mascote </h3>
+        <p> Wilber é o mascote oficial do projeto GIMP. Wilber foi criado em 25 de setembro de 1997 por Tuomas Kuosmanen, conhecido como 
+            "Bodinho" ou "Mascote do GIMP" O mascote Wilber foi desenhado utilizando-se o próprio GIMP Bodinho já foi editado várias vezes,
+            aparecendo com pincel na boca,</p>
+        
+        <h1 id="formu"> Formulário </h1>
+        <div class="blocoForm">
+            <b> <label for="name" style="margin-left: 21px;"> Nome </label> </b>
+            <input type="text" name="name" id="name" >
+        </div>
+            
+        <div class="blocoForm">
+            <b> <label for="email" style="margin-left: 19px;"> E-mail </label> </b>
+            <input type="email" name="email" id="email" />
+        </div>
+    
+        <div class="blocoForm">
+            <b> <label for="phone">Telefone</label> </b>
+            <input type="tel" name="phone" id="phone" >
+        </div>
+    
+        <div class="blocoForm">
+            <input type="checkbox" id="regulamento"> Receber informações comerciais via e-mail 
+        </div>
+
+        <div class="blocoForm">
+            <button type="submit" class="btn btn-primary"> Enviar </button>
+        </div>
+        
+        <h2 id=" refe">  Referências </h2>
+        <p> <a href="https://pt.wikipedia.org/wiki/GIMP"> wikipedia/GIMP </a></p>
+        <p> <a href="https://www.techtudo.com.br/tudo-sobre/gimp.html"> techtudo/tudo sobre </a></p>
+        <p> <a href="https://www.portalgsti.com.br/gimp/sobre/"> portalgsti/GIMP </a></p>
+        <p> <a href="https://canaltech.com.br/empresa/the-gimp-team/">canaltech/the gimp team  </a></p>
+
+        <h2 id="coment"> Comentários </h2>
+        <span class="commenter-name">
+            <input type="text" placeholder="Add a public comment" name="Add Comment">
+            <button type="submit" class="btn btn-primary"> Comment </button>
+            <button type="cancel" class="btn btn-danger"> Cancel </button>
+        </span>
+
+        <h2 id="avaliação"> Avaliação </h2>
+        <div class="estrelas">
+            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+        </div>
+
+    </div>
+
+    <footer>
+        Desenvolvido por Giovana Nagaishi - pep-3007006
+    </footer>
+</body>
